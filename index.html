@@ -8,7 +8,7 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
 	    <link href="style.css" rel="stylesheet"> 
     </head>
     <body>
@@ -23,7 +23,8 @@
                    <ul class="navbar-nav ml-auto">
                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                       <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                       <li class="nav-item"><a href="#" class="nav-link">Programs</a></li>
+                       <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
                        <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
                        <li class="nav-item"><a href="#" class="nav-link">Connect</a></li>
                    </ul>
@@ -35,25 +36,32 @@
             <div class="carousel-item active">
                 <img class="carousel-img" src="images/background1.png">
                 <div class="carousel-caption">
-                    <h2 class="display-6">Solutions,<br> That you need!</h2>
+                    <h2 class="display-6">English,<br>That you need!</h2>
                     <h3>Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction </h3>
-                    <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
-                    <button type="button" class="btn btn-primary btn-lg">Get Sarted</button>
+                   <!-- <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>-->
+                    <button type="button" class="btn btn-warning btn-lg">Get Sarted</button>
                 </div>
             </div>
         </div>
-        <div class="blue-bar"></div>
-        <!-- Jumbotron -->
-        <div class="container-fluide">
-            <div class="row jumbotron">
-                <div class="col-xs12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-                    <p class="lead">Description Description Description Description Description Description Description Description </p>
+        <div class="yellow-bar"></div>
+        <!-- Tow Colomn Section -->
+        <div class="container-fluid grey" >
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/background0.png" alt="img" class="img-fluid">
                 </div>
-                <div class="col-xs12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                    <a href="#"><button class="btn btn-outline-secondary btn-lg" type="button">See More</button></a>
+                <div class="col-lg-6 center">
+                    <h2>Hello There!</h2>
+                    <h4>Welcome to our Academy</h4>
+                    <p>Description Description Description Description Description Description Description Description </p>
+                    <p>Description Description Description Description Description Description Description Description Description Description </p>
+                    <p>Description Description Description Description Description Description .</p>
+                    <br>
+                    <button type="button" class="btn btn-warning">Learn More</button>
                 </div>
             </div>
         </div>
+        <div class="yellow-bar"></div>
         <!-- Welcome Section -->
         <div class="container-fluid padding">
             <div class="row welcome text-center">
@@ -87,23 +95,6 @@
             </div>
             <hr class="my-4">
         </div>
-        <!-- Tow Colomn Section -->
-        <div class="container-fluid padding">
-            <div class="row padding">
-                <div class="col-lg-6">
-                    <h2>If you build it...</h2>
-                    <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
-                    <p>Resize the browser window to see the effect. Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
-                    <p>It can also display the web page differently depending on the screen size or wiewing device.</p>
-                    <br>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/desk.png" alt="desk" class="img-fluid">
-                </div>
-            </div>
-        </div>
-        <hr class="my-4">
         <!-- Fixed background -->
         <figure>
             <div class="fixed-wrap">
@@ -111,21 +102,17 @@
             </div>
         </figure>
         <!-- Emoji Section -->
-        <button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun</button>
+        <button class="fun" data-toggle="collapse" data-target="#emoji">Click to see the course fees</button>
         <div class="collapse" id="emoji">
-            <div class="container-fluid padding">
-                <div class="row text-center">
+            <div class="container-fluid">
+                <div class="row text-center grey">
                     <div class="col-sm-6 col-md-3">
-                        <img src="images/gif/panda.gif" alt="emoji" class="gif">
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <img src="images/gif/poo.gif" alt="emoji" class="gif">
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <img src="images/gif/unicorn.gif" alt="emoji" class="gif">
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <img src="images/gif/chicken.gif" alt="emoji" class="gif">
                     </div>
                 </div>
             </div>
@@ -240,5 +227,29 @@
                 </div>
             </div>
         </footer>
+        <!--Go to top-->
+        <div id="totop" onclick="scrollToTop(); return false" title="Go back to top">
+            <i  id="top_appear" class="fas fa-arrow-alt-circle-up"></i>
+        </div>
+        <script>
+        // Scroll to top
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            var top = document.getElementById('totop');
+            if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+                top.style.display = 'block';
+            } else {
+                top.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+                scrollAnimation = setTimeout('scrollToTop()', 30);
+            } else clearTimeout(scrollAnimation);
+        };
+
+        </script>
     </body>
 </html>
