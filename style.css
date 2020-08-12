@@ -43,68 +43,51 @@ html,body{
     text-shadow: 1px 1px 10px #000000;
     padding-bottom: 1rem;
 }
-.yellow-bar {
+.black-bar {
     width: 100%;
-    height: 10px;
-    background-color: #eccd1a;
+    height: 30px;
+    background-color: #0a0a0a;
+}
+.margin {
+    margin: 0 30px;
 }
 .center {
-    align-self: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 auto;
 }
 .grey {
     background-color: #141414;
     color: #ffffff;
 }
-.img-fluide{
-    width: 100%;
-    height: 100%;
+.radius {
+    border-radius: 10px;
+}
+.paddin50 {
+    padding: 50px;
+}
+.img-fluid {
+    margin-left: 20px;
+    width: 80%;
+    height: 80%;
 }
 .btn-primary {
     background-color: #1999da;
     border: none;
 }
 .btn-primary:hover {
-    background-color: rgb(12, 77, 109);
+    background-color: #0c4d6d;
     border: none;
-}
-.jumbotron {
-    padding: 1rem;
-    border-radius: 0;
-}
-.padding {
-    padding-bottom: 2rem;
 }
 .welcome {
     width: 75%;
     margin: 0 auto;
     padding-top: 2rem;
 }
-.welcome hr {
-    border-top: 2px solid #b4b4b4;
-    width: 95%;
-    margin-top: .3rem;
-    margin-bottom: 1rem;
-}
-.fa-code {
-    color: #e54d26;
-}
-.fa-bold {
-    color: #563d7c;
-}
-.fa-css3 {
-    color: #2163af;
-}
-.fa-code, .fa-bold, .fa-css3 {
-    font-size: 4em;
-    margin: 1rem;
-}
 .card {
     background-color: #141414;
     color: #ffffff;
-    margin: 0 10px 0 10px;
-}
-.center {
-    align-items: center;
+    margin: 20px;
 }
 .zoom {
     overflow: hidden;
@@ -115,26 +98,13 @@ html,body{
 .zoom:hover img {
     transform: scale(1.5);
 }
-.fun {
-    width: 100%;
-    height: 40px;
-    font-size: 20px;
-    background-color: #eccd1a;
-    color: #000000;
-    padding : 0;
-    border-top: 1px solid #141414;
-    border-bottom: 1px solid #141414;
-    cursor: pointer;
-}
-.fun:hover {
-    font-weight: 530;
-}
-.gif {
-    max-width: 100%;
-}
+/* .card-img {
+    width: 280px;
+    height: 300px;
+} */
 .social a {
     padding: 3rem;
-    font-size: 4.5em;
+    font-size: 2.5rem;
 }
 .fa-facebook {
     color: #3b5998;
@@ -159,17 +129,25 @@ footer {
     color: #d5d5d5;
     padding-top: 2rem;
 }
-hr.light {
-    border-top: 1px solid #d5d5d5;
+hr {
     width: 75%;
     margin-top: .8rem;
     margin-bottom: 1rem
+}
+hr.dark {
+    border-top: 2px solid #242323;
+}
+.light {
+    border-top: 1px solid #d5d5d5;
 }
 hr.light-100 {
     border-top: 1px solid #d5d5d5;
     width: 100%;
     margin-top: .8rem;
     margin-bottom: 1rem
+}
+.b-shadow {
+    box-shadow: 1px 1px 10px #000000;
 }
 footer a {
     color: #d5d5d5;
@@ -230,7 +208,7 @@ footer a {
         padding: .7rem;
     }
 }
-Firefox bug fix 
+/* Firefox bug fix  */
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -258,19 +236,29 @@ figure {
     width: 100%;
     height: 100%;
 }
-#fixed1 {
-    background-image: url("images/background1.png");
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.fixed1 {
+    background-image: url("images/fixed00.png");
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center center;
-    /*-webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    width: 100%;
+    height: 60%;
+    padding: 70px;
+    /* text-shadow: 1px 1px 8px #ffffff */
+    color: #000000;
+    /*-webkit-transform: translateZ(-50);
+    transform: translateZ(-50);
     will-change: transform;*/
+}
+.fixed2 {
+    background-image: url("images/fixed00.png");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 130%;
+    color: #000000;
+}
+.fixed1 p, .fixed2 p {
+    font-size: 20px;
 }
 /* ----go to top----- */
 #totop {
@@ -278,7 +266,7 @@ figure {
     height: 50px;
     position: fixed;
     right: 10px;
-    top: 70vh;
+    top: 90vh;
     display: none;
     z-index: 200; 
 }
